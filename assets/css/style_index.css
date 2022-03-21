@@ -1,0 +1,43 @@
+*
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*css Introduce*/
+#Introduce
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: aqua;
+}
+#Introduce .Introduce-Title
+{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+#Introduce .Introduce-Content
+{
+    font-size: 20px;
+}
+/*css Member*/
+#Member .container
+{
+    height: 100%;
+    margin-top: 40px ;
+    margin-bottom: 20px;
+}
+#Member .card
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+.col-sm-4 
+{
+    margin-bottom: 10px;
+    margin-top:10px;
+}
+#Member .card .card-title
+{
+    font-size: 26px;
+    text-align: center;
+}
