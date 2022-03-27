@@ -2,3 +2,298 @@
 {
     font-family: 'Open Sans', sans-serif;
 }
+
+
+
+/*css Resume*/
+#Resume 
+{
+    padding: 90px 0 72px 0;
+}
+#Resume .Resume-box
+{
+    margin-bottom: 48px;
+    padding: 0 0 24px 0;
+}
+#Resume .Resume-Footer
+{
+    border-bottom: 1px solid #E8E8E8;
+}
+#Resume .Resume-Title
+{
+    padding: 9px 20px 0 20px;
+    margin: 0;
+}
+#Resume .Resume-Title h1
+{
+    margin: 0;
+    padding: 0 0 12px 0;
+    font-size: 18px;
+    line-height: 24px;
+}
+#Resume .Resume-Title span
+{
+    color: #313131;
+    line-height: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0 0 6px 0;
+    font-size: 18px;
+    border-bottom: 3px solid #11ABB0;
+}
+
+#Resume .Resume-Content .col-sm-12
+{
+    padding: 0 20px 0 20px;
+}
+#Resume .Resume-Content h3
+{
+    font-weight: 800 ;
+    font-size: 25px;
+    color: #313131;
+    margin: 0 0 12px 0;
+}
+#Resume .Resume-Content .Resume-Info
+{
+    
+    font-family: 'Libre Baskerville', serif;
+    margin: 9px 0 18px 0;
+    color: #6E7881;
+}
+#Resume .Resume-Content .Resume-Info span
+{
+    margin: 0 5px 0 5px;
+}
+#Resume .Resume-Content .Resume-Info em
+{
+    font-size: 15px;
+    margin: 6px 0 0 0;
+    font-family: 'Open Sans Regular', sans-serif;
+}
+#Resume .Resume-Content .Resume-Info-Content
+{
+    line-height: 30px;
+    font-weight: 400;
+    margin: 0 0 30px 0;
+    font-size: 15px;
+    color: #838C95;
+}
+#Resume .box-Skill p
+{
+    font-weight: 700;
+}
+#Resume .box-Skill .progress
+{
+    background-color: #CCCCCC;
+    margin: 0 0 20px 0;
+}
+#Resume .box-Skill .progress-bar
+{
+    background-color: #313131;
+}
+@media only screen and (max-width: 900px) {
+    .Resume-Title h1
+    {
+        text-align: center;
+        margin-bottom: 12px !important;
+        padding: 0;
+    }
+    #Resume .col-sm-11 h3
+    {
+        text-align: center !important;
+    }
+    #Resume .col-sm-11 .Resume-Info
+    {
+        text-align: center;
+    }
+}
+/*css Work*/
+#Works
+{
+    background-color: #EBEEEE;
+    padding: 90px 0 60px 0;
+}
+#Works .Works-Content h1
+{
+    line-height: 24px;
+    font-size: 15px !important;
+    text-transform: uppercase;
+    text-align: center;
+    color: #95A3A3;
+    margin-bottom: 48px;
+}
+#Works .col-sm-3
+{
+    margin-bottom: 36px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#Works .col-sm-3 .Works-Box
+{
+    width: 85%;
+    position: relative;
+}
+.Works-Img img
+{
+    width: 100%;
+}
+.col-sm-3 .Works-Box .Works-Item
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    padding: 18px;
+    background: url(../img/overlay-bg.png);
+}
+.col-sm-3 .Works-Box .Works-Item .Works-Item-Title h5
+{
+    color: #FFFFFF;
+    font-weight: 600;
+    line-height: 21px;
+    font-size: 14px;
+    margin: 0px;
+}
+.col-sm-3 .Works-Box .Works-Item .Works-Item-Title p
+{
+    color: #C6C7C7;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 200;
+    margin: 0;
+}
+.col-sm-3 .Works-Box .Works-Icon
+{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    height: 30px;
+    width: 30px;
+    font-size: 18px;
+    line-height: 30px;
+    top:50%;
+    left:50%;
+    margin: -15px 0 0 -15px;
+    opacity: 0;
+
+}
+.col-sm-3:hover .Works-Item
+{
+    opacity: 1;
+}
+.col-sm-3:hover .Works-Icon
+{
+    opacity: 1;
+}
+#Works .modal-content .modal-body
+{
+    padding: 0px;
+}
+#Works .modal-content .modal-body img
+{
+    margin-bottom: 10px;
+    width: 100%;
+    height: 360px;
+}
+#Works .modal-content .modal-body .modal-content-box
+{
+    padding: 12px 36px 18px 36px;
+}
+.modal-content .modal-body .modal-content-box h4
+{
+    font-size: 15px;
+    margin: 0 0 12px 0;
+    font-weight: 800;
+    color: #111111;
+    line-height: 24px;
+}
+.modal-content .modal-body .modal-content-box p
+{
+    margin: 0 0 12px 0;
+    color: #A1A1A1;
+    font-size: 14px;
+    line-height: 24px;
+}
+.modal-content .modal-body .modal-content-box span
+{
+    text-transform: uppercase;
+    color: #A1A1A1;
+    font-size: 11px;
+    line-height: 21px;
+}
+.modal-content .modal-body .modal-content-box span .fa-tag
+{
+    margin-right: 8px;
+}
+#Works .modal-content .modal-footer
+{
+    display: block;
+    padding: 18px 36px 18px 36px;
+    background-color: #111111;
+}
+#Works .modal-content .modal-footer .btn
+{
+    padding: 0;
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 11px;
+    line-height: 21px;
+    font-weight: 600;
+}
+#Works .modal-content .modal-footer .btn a
+{
+   text-decoration: none;
+   color: #FFFFFF; 
+}
+#Works .modal-content .modal-footer .btn-danger
+{
+    margin-left: 24px;
+    background-color: #111111;
+    border: 0px;
+    text-transform: uppercase;
+}
+/*css Call-to-Active*/
+#Call-Active
+{
+    background-color: #212121;
+    padding: 66px 0 48px 0;
+}
+.col-sm-2
+{
+    padding: 0 20px 0 20px;
+}
+.col-sm-7
+{
+    padding: 0 20px 0 20px;
+}
+.col-sm-7 h2
+{
+    color: #FFFFFF;
+    font-size: 28px;
+    line-height: 36px;
+}
+.col-sm-7 p
+{
+    color: #FFFFFF;
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+.fa-earth-asia
+{
+    color: #FFFFFF;
+    font-size: 72px;
+    text-align: left;
+}
+@media only screen and (max-width: 900px) {
+    #Call-Active .col-sm-9
+    {
+        text-align: center;
+    }
+}
