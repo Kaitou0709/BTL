@@ -91,7 +91,7 @@
 {
     background-color: #313131;
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 600px) {
     .Resume-Title h1
     {
         text-align: center;
@@ -291,7 +291,7 @@
     font-size: 72px;
     text-align: left;
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 600px) {
     #Call-Active .col-sm-9
     {
         text-align: center;
