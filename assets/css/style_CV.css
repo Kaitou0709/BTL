@@ -264,28 +264,28 @@
     background-color: #212121;
     padding: 66px 0 48px 0;
 }
-.col-sm-2
+#Call-Active .col-sm-2
 {
     padding: 0 20px 0 20px;
 }
-.col-sm-7
+#Call-Active .col-sm-7
 {
     padding: 0 20px 0 20px;
 }
-.col-sm-7 h2
+#Call-Active .col-sm-7 h2
 {
     color: #FFFFFF;
     font-size: 28px;
     line-height: 36px;
 }
-.col-sm-7 p
+#Call-Active .col-sm-7 p
 {
     color: #FFFFFF;
     font-size: 17px;
     line-height: 30px;
     margin-bottom: 30px;
 }
-.fa-earth-asia
+#Call-Active .fa-earth-asia
 {
     color: #FFFFFF;
     font-size: 72px;
@@ -296,4 +296,183 @@
     {
         text-align: center;
     }
+}
+/*css testimonials*/
+#Testimonials
+{
+    padding: 96px 0 66px 0;
+    background: url(../img/background-3d-dong_032845717.gif);
+    background-attachment: fixed !important;
+    background-size: 100%;
+}
+#Testimonials .col-sm-2
+{
+    padding: 0 20px 0 20px;
+}
+#Testimonials .fa-quote-left
+{
+    color: #FFFFFF;
+    font-size: 72px;
+}
+#Testimonials .carousel-indicators
+{
+    margin: 0px;
+    display: block;
+    z-index: 0;
+    bottom: 0;
+    left: 0;
+    text-align: left;
+    position: relative;
+}
+#Testimonials .d-block
+{
+    margin-bottom: 20px;
+}
+#Testimonials .carousel-indicators .rounded-circle
+{
+    height: 10px !important;
+    width: 10px !important;
+}
+#Testimonials .carousel-item .d-block p
+{
+    font-size: 24px;
+    line-height: 48px;
+    text-align: left;
+    font-family: 'Libre Baskerville', serif;
+    color: #FFFFFF;
+    font-style: italic;
+}
+/*css Contact*/
+#Contact
+{
+    background-color: #191919;
+    padding: 96px 0 102px 0;
+}
+#Contact .col-sm-9
+{
+    margin-bottom: 42px;
+}
+#Contact .col-sm-2
+{
+    padding: 0 20px 0 20px;
+}
+#Contact .col-sm-2 .fa-envelope
+{
+    font-size: 72px;
+    color: #EBEEEE;
+}
+#Contact .col-sm-10
+{
+    font-size: 18px;
+    padding: 0 20px 0 20px;
+    line-height: 36px;
+    color: #636363;
+}
+#Contact .col-sm-10 p
+{
+    margin-bottom: 18px ;
+}
+#Contact .col-sm-8
+{
+    padding: 0 20px 0 20px;
+}
+#Contact .col-sm-3 .title-input
+{
+    color: #FFFFFF;
+}
+#Contact .color-obligatory
+{
+    color: #11ABB0;
+}
+#Contact .col-input
+{
+    padding: 0 0 0 12px;
+}
+#Contact .col-sm-8 .form-control
+{
+    color: #FFFFFF;
+    background-color: #373233;
+    margin-bottom: 42px;
+    padding: 18px 20px 18px 20px;
+}
+#Contact .col-sm-8 .form-control:focus
+{
+    background-color: #11ABB0;
+}
+#Contact .btn-primary
+{
+    padding: 12px 20px 12px 20px;
+    background-color: #0d0d0d;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: 0px;
+}
+#Contact .btn-primary:hover
+{
+    background-color: #FFFFFF;
+    color: #0d0d0d;
+}
+#Contact .col-sm-4
+{
+    padding: 0 20px 0 20px;
+}
+#Contact .col-sm-4 h4
+{
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 6px;
+}
+#Contact .col-sm-4 p
+{
+    margin: 0px;
+    padding-bottom: 6px;
+    color: #636363;
+}
+#Contact .col-sm-4 .content
+{
+    margin-bottom: 30px;
+}
+/*css Footer*/
+footer
+{
+    position: relative;
+    background-color: black;
+    padding: 48px 0 48px 0;
+}
+footer .rounded-circle
+{
+    height: 60px;
+    width: 60px;
+    background-color: #303030;
+    justify-content: center;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    top: -30px;
+    margin-left: -30px;
+}
+footer .fa-angle-up
+{
+    font-size: 21px;
+    color: #FFFFFF;
+}
+footer .rounded-circle:hover
+{
+    background-color: #0F9095;
+}
+footer .icon-footer
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 18px 0 30px 0;
+}
+footer .icon-footer .fa-brands
+{
+    color: #525252;
+    margin: 0 30px 0 30px;
+    font-size: 30px;
 }
