@@ -2,9 +2,141 @@
 {
     font-family: 'Open Sans', sans-serif;
 }
+/*css menu*/
+.nav-link
+{
+    text-transform: uppercase;
+}
+.nav-link.active
+{
+    color: red !important;
+}
+/*css Home*/
+#Home
+{
+    background: url(../img/header-background.jpg);
+    background-size: 100%;
+    padding: 170px 0 0 0 ;
+}
+#Home .home-box .col-sm-11
+{
+    margin-bottom: 30px;
+}
+#Home .home-title
+{
+    font-size: 90px;
+    line-height: 99px;
+    text-align: center;
+    margin-bottom: 18px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+#Home .home-content
+{
+    text-align: center;
+    color: #A8A8A8;
+    font-size: 18px;
+    line-height: 34px;
+}
+#Home hr
+{
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 18px;
+    margin-bottom: 24px;
+    border-top: 1px solid #969696;
+}
+#Home .icon
+{
+    margin: 24px 0 24px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+}
+#Home .icon a
+{
+    color: #FFFFFF;
+    margin: 0 20px 0 20px;
+    font-size: 30px;
+    line-height: 30px;
+}
+#Home .icon-down
+{
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#Home .rounded-circle
+{
+    background-color: #FFFFFF;
+    height: 42px;
+    width: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#Home .rounded-circle:hover
+{
+    background-color: #11ABB0;
+}
+#Home .rounded-circle .fa-angle-down
+{   
+    font-size: 28px;
+    font-weight: 600;
+}
+/*css About*/
+#About
+{
+    padding: 96px 0 66px 0;
+    background-color: #2B2B2B;
+}
+#About .col-sm-3 img
+{
+    width: 120px;
+    height: 120px;
+}
+#About .col-sm-9
+{
+    padding: 0 51px 0 20px;
+}
+#About .col-sm-9 h2
+{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+}
+#About .col-sm-9 p
+{
+    font-size: 15px;
+    line-height: 30px;
+    color: #7A7A7A;
+    margin-bottom: 30px;
+}
+.btn-primary
+{
+    background-color: #444444;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 700;
+    border: 0px;
+    padding: 12px 20px 12px 20px;
+}
+.btn-primary:hover
+{
+    background-color: #FFFFFF;
+    color: #111111;
+}
 
-
+.btn-primary .fa-download
+{
+    padding-right: 5px;
+}
 /*css Resume*/
 #Resume 
 {
@@ -473,6 +605,6 @@ footer .icon-footer
 footer .icon-footer .fa-brands
 {
     color: #525252;
-    margin: 0 30px 0 30px;
+    margin: 0 20px 0 20px;
     font-size: 30px;
 }
