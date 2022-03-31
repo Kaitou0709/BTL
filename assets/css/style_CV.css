@@ -1,21 +1,12 @@
-<<<<<<< HEAD
 .bg{
     background-image: url("../img/header-background.jpg");
     height: 667px;
     position: relative;
     min-height: 500px;
     width: 100%;
-    -webkit-background-size: cover !important;
     text-align: center;
     overflow: hidden;
 }
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .menu ul{
     min-height: 48px;
     width: auto;
@@ -90,11 +81,9 @@
     display: flex ;
     justify-content: center;
 }   
-
-i{
+.mt4 i{
     margin: 24px;
 }
-
 .bg-2{
     background-color: #2b2b2b;
     padding-top: 96px;
@@ -132,9 +121,7 @@ i{
     float: left;
     height: 120px;
     border-radius: 100px;
-    
 }
-
 .iconn{
     background: #3d4145;
     color: #2b2b2b;
@@ -150,18 +137,11 @@ i{
     background-color: white;
     color: black;
 }
-.iconn > p {
-    padding-top: 12px;
-padding-right: 15px;
-}
-.iconn > i {
-margin-top: 14px;
-}
 .note{
     display: flex;
     justify-content: space-between;
     padding-right: 100px;
-=======
+}
 *
 {
     font-family: 'Open Sans', sans-serif;
@@ -174,6 +154,10 @@ margin-top: 14px;
 .nav-link.active
 {
     color: red !important;
+}
+.navbar-collapse .navbar-brand
+{
+    text-align: end;
 }
 /*css Home*/
 #Home
@@ -248,6 +232,7 @@ margin-top: 14px;
 }
 #Home .rounded-circle .fa-angle-down
 {   
+    color: #111111;
     font-size: 28px;
     font-weight: 600;
 }
@@ -281,7 +266,7 @@ margin-top: 14px;
     color: #7A7A7A;
     margin-bottom: 30px;
 }
-.btn-primary
+#About .btn-primary
 {
     background-color: #444444;
     color: #FFFFFF;
@@ -291,13 +276,13 @@ margin-top: 14px;
     border: 0px;
     padding: 12px 20px 12px 20px;
 }
-.btn-primary:hover
+#About .btn-primary:hover
 {
     background-color: #FFFFFF;
     color: #111111;
 }
 
-.btn-primary .fa-download
+#About .btn-primary .fa-download
 {
     padding-right: 5px;
 }
