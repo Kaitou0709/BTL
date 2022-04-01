@@ -58,5 +58,5 @@ function edit_account(account)
     let row = account.parentElement.parentElement.children
     console.log(row)
     FormAccount.exampleUserName1.value = row[1].innerHTML
-    FormAccount.exampleInputPassword.value = row[0].innerHTML
+    FormAccount.exampleInputPassword.value = row[2].innerHTML
 }
