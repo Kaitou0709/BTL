@@ -5,9 +5,10 @@
 /*css Introduce*/
 #Introduce
 {
+    color: #FFFFFF;
     padding-top: 50px;
     padding-bottom: 50px;
-    background-color: aqua;
+    background: url(../img/background-3d-dong_032845717.gif);
 }
 #Introduce .Introduce-Title
 {
@@ -31,10 +32,15 @@
     margin-left: auto;
     margin-right: auto;
 }
-.col-sm-4 
+#Member .col-sm-4 
 {
     margin-bottom: 10px;
     margin-top:10px;
+}
+#Member .col-sm-4 .card-img-top
+{
+    padding-bottom: 10px;
+    height: 200px;
 }
 #Member .card .card-title
 {
