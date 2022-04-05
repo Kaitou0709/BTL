@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Account</title>
+    <title>Admin CV</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -13,7 +12,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="assets/css/style_management.css">
 </head>
-
 <body>
     <div id="Menu">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -27,29 +25,28 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Account</a>
+                            <a class="nav-link" aria-current="page" href="account.html">Account</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="CV.html">CV</a>
+                            <a class="nav-link active" href="#">CV</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </div>
-    <div id="Account-Management">
+    <div id="Introduce-Group">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-sm-10">
                     <div class="Title">
                         <h3>
-                            Account Management
+                            Introduce Group
                         </h3>
                     </div>
                 </div>
-                <form onsubmit="add_account()" name="FormAccount" id="Form_Account">
-                    <div class="input"><input type="text" class="form-control" id="exampleUserName1" name="exampleUserName1" placeholder="Tên đăng nhập"></div>
-                    <div class="input"><input type="text" class="form-control" id="exampleInputPassword" name="exampleInputPassword" placeholder="Mật khẩu"></div>
+                <form onsubmit="add_Introduce_Group()" name="FormIntroduceGroup" id="Form_Introduce_Group">
+                    <div class="input"><textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Nội dung của nhóm" name="exampleFormControlTextarea1"></textarea></div>
                     <div class="button">
                         <button type="submit" class="btn btn-primary">Thêm</button>
                         <button type="button" class="btn btn-success">Sửa</button>
@@ -60,13 +57,52 @@
                         <thead>
                           <tr>
                             <th scope="col">#</th>
-                            <th scope="col">Tên đăng nhập</th>
-                            <th scope="col">Mật khẩu</th>
+                            <th scope="col">Nội dung của nhóm</th>
                             <th scope="col">Sửa</th>
                             <th scope="col">Xoá</th>
                           </tr>
                         </thead>
-                        <tbody id="Account_content">
+                        <tbody id="Introduce_Group_content">
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="Introduce-Personal">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-10">
+                    <div class="Title">
+                        <h3>
+                            Introduce Personal 
+                        </h3>
+                    </div>
+                </div>
+                <form onsubmit="add_Introduce_Personal()" name="FormIntroducePersonal" id="Form_Introduce_Personal">
+                    <div class="input"><input type="text" class="form-control" id="exampleUserName" name="exampleUserName" placeholder="Tên"></div>
+                    <div class="input"><input class="form-control" type="file" id="formFileMultiple" name="formFileMultiple" multiple></div>
+                    <div class="input"><textarea class="form-control" id="exampleFormControlTextarea2" rows="3" placeholder="Nội dung của cá nhân" name="exampleFormControlTextarea2"></textarea></div>
+                    <div class="button">
+                        <button type="submit" class="btn btn-primary">Thêm</button>
+                        <button type="button" class="btn btn-success">Sửa</button>
+                    </div>
+                </form>
+                <div>
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Tên</th>
+                            <th scope="col">Ảnh</th>
+                            <th scope="col">Nội dung cá nhân</th>
+                            <th scope="col">Sửa</th>
+                            <th scope="col">Xoá</th>
+                            <th scope="col">Sửa nội dung</th>
+                          </tr>
+                        </thead>
+                        <tbody id="Introduce_Personal_content">
                         </tbody>
                       </table>
                 </div>
@@ -75,7 +111,6 @@
     </div>
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
-    <script src="assets/js/account.js" type="text/javascript"></script>
+    <script src="assets/js/CV.js" type="text/javascript"></script>
 </body>
-
 </html>
