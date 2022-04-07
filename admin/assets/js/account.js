@@ -50,13 +50,27 @@ function add_account()
 function delete_account(account)
 {
     let row = account.parentElement.parentElement
-    console.log(row)
     row.remove()
 }
 function edit_account(account)
 {
     let row = account.parentElement.parentElement.children
-    console.log(row)
+    idChangeAccount = row[0].innerHTML
     FormAccount.exampleUserName1.value = row[1].innerHTML
     FormAccount.exampleInputPassword.value = row[2].innerHTML
+}
+function button_edit_account()
+{
+    let name_account = FormAccount.exampleUserName1.value
+    let pw_account = FormAccount.exampleInputPassword.value
+    Account_content = document.getElementById("Account_content")
+    for(var i = 0;i<Account_content.children.length;i++)
+    {
+    if(Account_content.children[i].children[0].innerHTML==idChangeAccount)
+    {
+        Account_content.children[i].children[1].innerHTML = name_account
+        Account_content.children[i].children[2].innerHTML = pw_account
+        break
+    }
+    }
 }
