@@ -10,6 +10,7 @@ $(document).ready(function(){
         exampleInputEmail1:
         {
             required:true,
+            email: true
         },
         exampleFormControlTextarea1:
         {
@@ -25,6 +26,7 @@ $(document).ready(function(){
         exampleInputEmail1:
         {
             required:"Vui lòng nhập Email",
+            email:"Vui lòng nhập đúng dạng email"
         },
         exampleFormControlTextarea1:
         {
