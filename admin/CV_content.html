@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin CV content</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style_management.css">
+</head>
+<body>
+    <div id="Home-Content" class="Content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-10">
+                    <div class="Title">
+                        <h3>
+                            Home Content
+                        </h3>
+                    </div>
+                </div>
+                <form onsubmit="add_Home_Content()" name="FormHomeContent" id="Form_Home_Content">
+                    <div class="input"><input type="text" class="form-control" id="exampleUserName1" name="exampleUserName1" placeholder="Tên"></div>
+                    <div class="input"><textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Nội dung của trang chủ CV" name="exampleFormControlTextarea1"></textarea></div>
+                    <div class="button">
+                        <button type="submit" class="btn btn-primary">Thêm</button>
+                        <button type="button" onclick="button_edit_Home_Content()" class="btn btn-success">Sửa</button>
+                    </div>
+                </form>
+                <div>
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Tên</th>
+                            <th scope="col">Nội dung của trang chủ CV</th>
+                            <th scope="col">Sửa</th>
+                            <th scope="col">Xoá</th>
+                          </tr>
+                        </thead>
+                        <tbody id="Home_Content_row">
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="About-Content" class="Content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-10">
+                    <div class="Title">
+                        <h3>
+                            About Content
+                        </h3>
+                    </div>
+                </div>
+                <form onsubmit="add_About_Content()" name="FormAboutContent" id="Form_About_Content">
+                    <div class="input"><input class="form-control" type="file" id="formFileMultiple1" name="formFileMultiple1" multiple></div>
+                    <div class="input"><textarea class="form-control" id="exampleFormControlTextarea2" rows="3" placeholder="Nội dung của trang chủ CV" name="exampleFormControlTextarea2"></textarea></div>
+                    <div class="button">
+                        <button type="submit" class="btn btn-primary">Thêm</button>
+                        <button type="button" onclick="button_edit_About_Content()" class="btn btn-success">Sửa</button>
+                    </div>
+                </form>
+                <div>
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Ảnh</th>
+                            <th scope="col">Nội dung giới thiệu</th>
+                            <th scope="col">Sửa</th>
+                            <th scope="col">Xoá</th>
+                          </tr>
+                        </thead>
+                        <tbody id="About_Content_row">
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="Education-Content" class="Content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-10">
+                    <div class="Title">
+                        <h3>
+                            Education Content
+                        </h3>
+                    </div>
+                </div>
+                <form onsubmit="add_Education_Content()" name="FormEducationContent" id="Form_Education_Content">
+                    <div class="input"><input type="text" class="form-control" id="exampleLevel1" name="exampleLevel1" placeholder="Cấp Học"></div>
+                    <div class="input"><input type="text" class="form-control" id="exampleIn1" name="exampleIn1" placeholder="Học Tại"></div>
+                    <div class="input"><input type="text" class="form-control" id="exampleTime1" name="exampleTime1" placeholder="Thời gian"></div>
+                    <div class="input"><textarea class="form-control" id="exampleFormControlTextarea3" rows="3" placeholder="Nội dung quá trình học" name="exampleFormControlTextarea3"></textarea></div>
+                    <div class="button">
+                        <button type="submit" class="btn btn-primary">Thêm</button>
+                        <button type="button" onclick="button_edit_Education_Content()" class="btn btn-success">Sửa</button>
+                    </div>
+                </form>
+                <div>
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Cấp học</th>
+                            <th scope="col">Học Tại</th>
+                            <th scope="col">Thời gian</th>
+                            <th scope="col">Nội dung quá trình học</th>
+                            <th scope="col">Sửa</th>
+                            <th scope="col">Xoá</th>
+                          </tr>
+                        </thead>
+                        <tbody id="Education_Content_row">
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="Work-Resume-Content" class="Content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-10">
+                    <div class="Title">
+                        <h3>
+                            Work Resume Content
+                        </h3>
+                    </div>
+                </div>
+                <form onsubmit="add_Work_Resume_Content()" name="FormWorkResumeContent" id="Form_Work_Resume_Content">
+                    <div class="input"><input type="text" class="form-control" id="exampleCompany1" name="exampleCompany1" placeholder="Công ty"></div>
+                    <div class="input"><input type="text" class="form-control" id="examplePosition1" name="examplePosition1" placeholder="Vị trí"></div>
+                    <div class="input"><input type="text" class="form-control" id="exampleTime2" name="exampleTime2" placeholder="Thời gian"></div>
+                    <div class="input"><textarea class="form-control" id="exampleFormControlTextarea4" rows="3" placeholder="Nội dung quá trình làm việc" name="exampleFormControlTextarea4"></textarea></div>
+                    <div class="button">
+                        <button type="submit" class="btn btn-primary">Thêm</button>
+                        <button type="button" onclick="button_edit_Work_Resume_Content()" class="btn btn-success">Sửa</button>
+                    </div>
+                </form>
+                <div>
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Công ty</th>
+                            <th scope="col">Vị trí</th>
+                            <th scope="col">Thời gian</th>
+                            <th scope="col">Nội dung quá trình làm việc</th>
+                            <th scope="col">Sửa</th>
+                            <th scope="col">Xoá</th>
+                          </tr>
+                        </thead>
+                        <tbody id="Work_Resume_Content_row">
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="Skill-Content" class="Content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-10">
+                    <div class="Title">
+                        <h3>
+                            Skill Content
+                        </h3>
+                    </div>
+                </div>
+                <form onsubmit="add_Skill_Content()" name="FormSkillContent" id="Form_Skill_Content">
+                    <div class="input"><textarea class="form-control" id="exampleFormControlTextarea5" rows="3" placeholder="Nội dung giới thiệu về kỹ năng" name="exampleFormControlTextarea5"></textarea></div>
+                    <div class="button">
+                        <button type="submit" class="btn btn-primary">Thêm</button>
+                        <button type="button" onclick="button_edit_Skill_Content()" class="btn btn-success">Sửa</button>
+                    </div>
+                </form>
+                <div>
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nội dung giới thiệu về kỹ năng</th>
+                            <th scope="col">Sửa</th>
+                            <th scope="col">Xoá</th>
+                          </tr>
+                        </thead>
+                        <tbody id="Skill_Content_row">
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="Skill-Bar-Content" class="Content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-10">
+                    <div class="Title">
+                        <h3>
+                            Skill Bar Content
+                        </h3>
+                    </div>
+                </div>
+                <form onsubmit="add_Skill_Bar_Content()" name="FormSkillBarContent" id="Form_Skill_Bar_Content">
+                    <div class="input"><input type="text" class="form-control" id="exampleSkill1" name="exampleSkill1" placeholder="Kỹ năng"></div>
+                    <div class="input"><input type="text" class="form-control" id="exampleCentSkill1" name="exampleCentSkill1" placeholder="Phần trăm thành thạo"></div>
+                    <div class="button">
+                        <button type="submit" class="btn btn-primary">Thêm</button>
+                        <button type="button" onclick="button_edit_Skill_Bar_Content()" class="btn btn-success">Sửa</button>
+                    </div>
+                </form>
+                <div>
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Kỹ năng</th>
+                            <th scope="col">Phần trăm thành thạo</th>
+                            <th scope="col">Sửa</th>
+                            <th scope="col">Xoá</th>
+                          </tr>
+                        </thead>
+                        <tbody id="Skill_Bar_Content_row">
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="Work-Content" class="Content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-10">
+                    <div class="Title">
+                        <h3>
+                            Work Content
+                        </h3>
+                    </div>
+                </div>
+                <form onsubmit="add_Work_Content()" name="FormWorkContent" id="Form_Work_Content">
+                    <div class="input"><input class="form-control" type="file" id="formFileMultiple2" name="formFileMultiple2" multiple></div>
+                    <div class="input"><input type="text" class="form-control" id="exampleTitle1" name="exampleTitle1" placeholder="Chủ đề"></div>
+                    <div class="input"><textarea class="form-control" id="exampleFormControlTextarea6" rows="3" placeholder="Nội dung công việc" name="exampleFormControlTextarea6"></textarea></div>
+                    <div class="button">
+                        <button type="submit" class="btn btn-primary">Thêm</button>
+                        <button type="button" onclick="button_edit_Work_Content()" class="btn btn-success">Sửa</button>
+                    </div>
+                </form>
+                <div>
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Ảnh</th>
+                            <th scope="col">Tiêu đề ảnh</th>
+                            <th scope="col">Nội dung</th>
+                            <th scope="col">Sửa</th>
+                            <th scope="col">Xoá</th>
+                          </tr>
+                        </thead>
+                        <tbody id="Work_Content_row">
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="Testimonial-Content" class="Content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-10">
+                    <div class="Title">
+                        <h3>
+                            Testimonial Content
+                        </h3>
+                    </div>
+                </div>
+                <form onsubmit="add_Testimonial_Content()" name="FormTestimonialContent" id="Form_Testimonial_Content">
+                    <div class="input"><textarea class="form-control" id="exampleFormControlTextarea7" rows="3" placeholder="Nội dung câu nói" name="exampleFormControlTextarea7"></textarea></div>
+                    <div class="input"><input type="text" class="form-control" id="exampleWho1" name="exampleWho1" placeholder="Câu nói của"></div>
+                    <div class="button">
+                        <button type="submit" class="btn btn-primary">Thêm</button>
+                        <button type="button" onclick="button_edit_Testimonial_Content()" class="btn btn-success">Sửa</button>
+                    </div>
+                </form>
+                <div>
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nội dung câu nói</th>
+                            <th scope="col">Câu nói của</th>
+                            <th scope="col">Sửa</th>
+                            <th scope="col">Xoá</th>
+                          </tr>
+                        </thead>
+                        <tbody id="Testimonial_Content_row">
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="Contact-Content" class="Content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-10">
+                    <div class="Title">
+                        <h3>
+                            Contact Content
+                        </h3>
+                    </div>
+                </div>
+                <form onsubmit="add_Contact_Content()" name="FormContactContent" id="Form_Contact_Content">
+                    <div class="input"><input type="text" class="form-control" id="exampleUserName2" name="exampleUserName2" placeholder="Tên"></div>
+                    <div class="input"><input type="text" class="form-control" id="exampleAddress1" name="exampleAddress1" placeholder="Địa chỉ"></div>
+                    <div class="input"><input type="text" class="form-control" id="examplePhone1" name="examplePhone1" placeholder="Điện thoại"></div>
+                    <div class="button">
+                        <button type="submit" class="btn btn-primary">Thêm</button>
+                        <button type="button" onclick="button_edit_Contact_Content()" class="btn btn-success">Sửa</button>
+                    </div>
+                </form>
+                <div>
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Tên</th>
+                            <th scope="col">Địa chỉ</th>
+                            <th scope="col">Số điện thoại</th>
+                            <th scope="col">Sửa</th>
+                            <th scope="col">Xoá</th>
+                          </tr>
+                        </thead>
+                        <tbody id="Contact_Content_row">
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="Link" class="Content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-10">
+                    <div class="Title">
+                        <h3>
+                            Link
+                        </h3>
+                    </div>
+                </div>
+                <form onsubmit="add_Link()" name="FormLink" id="Form_Link">
+                    <div class="input">
+                        <select class="form-select" name="FormSelect">
+                            <option selected value="">Lựa chọn phần mềm</option>
+                            <option value="Facebook">Facebook</option>
+                            <option value="Twitter">Twitter</option>
+                            <option value="Google">Google</option>
+                            <option value="Linkedin">Linkedin</option>
+                            <option value="Instagram">Instagram</option>
+                            <option value="Skypy">Skypy</option>
+                          </select>
+                    </div>
+                    <div class="input"><input type="text" class="form-control" id="exampleLink1" name="exampleLink1" placeholder="Link"></div>
+                    <div class="button">
+                        <button type="submit" class="btn btn-primary">Thêm</button>
+                        <button type="button" onclick="button_edit_Link()" class="btn btn-success">Sửa</button>
+                    </div>
+                </form>
+                <div>
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Phần mềm</th>
+                            <th scope="col">Link</th>
+                            <th scope="col">Sửa</th>
+                            <th scope="col">Xoá</th>
+                          </tr>
+                        </thead>
+                        <tbody id="Link_row">
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="button button-back">
+        <a class="btn btn-primary" href="CV.html" role="button">Xác nhận sửa</a>
+        <a class="btn btn-danger" href="CV.html" role="button">Huỷ</a>
+    </div>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+    <script src="assets/js/CV_content.js" type="text/javascript"></script>
+</body>
+</html>
