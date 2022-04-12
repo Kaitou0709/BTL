@@ -29,11 +29,11 @@ id = 1
 function add_account()
 {
     event.preventDefault()
-    var name_account = FormAccount.exampleUserName1.value
-    var pw_account = FormAccount.exampleInputPassword.value
+    let name_account = FormAccount.exampleUserName1.value
+    let pw_account = FormAccount.exampleInputPassword.value
     if(name_account.length==0 || pw_account.length==0)
     {
-        console.log(0);
+        return 0
     }
     else
     {
